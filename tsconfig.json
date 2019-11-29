@@ -1,0 +1,28 @@
+{
+  "compileOnSave": false,
+  "include": [
+    "./src/*.ts",
+    "src/contracts/test-contract.ts"
+  ],
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "plugins": [
+      {
+        "transform": "ts-auto-mock/transformer"
+      }
+    ],
+    "sourceMap": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "allowJs": true
+  },
+  "exclude": [
+    "node_modules",
+    ".npm"
+  ]
+}
